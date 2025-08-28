@@ -4,30 +4,30 @@
 # ==========================
 
 drama1 = {
-    "제목": "",            # IMPLEMENT ME
-    "장르": "",            # IMPLEMENT ME
-    "주제": "",            # IMPLEMENT ME
-    "방영기간": "",         # IMPLEMENT ME  (예: "2024-01-01 ~ 2024-02-01")
-    "배우": [],            # IMPLEMENT ME  (예: ["홍길동", "김코딩"])
-    "명대사": ""           # IMPLEMENT ME  (예: "\"이 또한 지나가리라.\"")
+    "제목": "태양의 후예",
+    "장르": "판타지",
+    "주제": "군인",
+    "방영기간": "2024-01-01 ~ 2024-02-01",
+    "배우": ["송중기", "송혜교"],
+    "명대사": "\"내 걱정만 해요\""
 }
 
 drama2 = {
-    "제목": "",            # IMPLEMENT ME
-    "장르": "",            # IMPLEMENT ME
-    "주제": "",            # IMPLEMENT ME
-    "방영기간": "",         # IMPLEMENT ME
-    "배우": [],            # IMPLEMENT ME
-    "명대사": ""           # IMPLEMENT ME
+    "제목": "미스터 선샤인",
+    "장르": "사극",
+    "주제": "일제강점기",
+    "방영기간": "2024-01-01 ~ 2024-02-01",
+    "배우": ["김태리", "유연석"],
+    "명대사": "\"몰라요\""
 }
 
 new_title = input("새 드라마 제목: ")  
 
-new_genre = ""                          # IMPLEMENT ME: input("새 드라마 장르: ")
-new_theme = ""                          # IMPLEMENT ME: input("새 드라마 주제: ")
-new_period = ""                         # IMPLEMENT ME: input("새 드라마 방영기간(예: 2024-01-01 ~ 2024-02-01): ")
-new_actors_input = ""                   # IMPLEMENT ME: input("새 드라마 배우들(쉼표로 구분): ")
-new_quote_raw = ""                      # IMPLEMENT ME: input("인상 깊었던 대사(따옴표 없이 입력): ")
+new_genre = input("새 드라마 장르: ")
+new_theme = input("새 드라마 주제: ")
+new_period = input("새 드라마 방영기간(예: 2024-01-01 ~ 2024-02-01): ")
+new_actors_input = input("새 드라마 배우들(쉼표로 구분): ")
+new_quote_raw = input("인상 깊었던 대사(따옴표 없이 입력): ")
 
 new_actors = new_actors_input.split(",")
 new_quote = f"\"{new_quote_raw}\""
@@ -43,11 +43,11 @@ drama3 = {
 
 
 upd_title = input("수정(덮어쓰기)할 제목(대상: drama2): ")  
-upd_genre = ""                         # IMPLEMENT ME: input("수정할 장르: ")
-upd_theme = ""                         # IMPLEMENT ME: input("수정할 주제: ")
-upd_period = ""                        # IMPLEMENT ME: input("수정할 방영기간: ")
-upd_actors_input = ""                  # IMPLEMENT ME: input("수정할 배우들(쉼표로 구분): ")
-upd_quote_raw = ""                     # IMPLEMENT ME: input("수정할 명대사(따옴표 없이 입력): ")
+upd_genre = input("수정할 장르: ")
+upd_theme = input("수정할 주제: ")
+upd_period = input("수정할 방영기간: ")
+upd_actors_input = input("수정할 배우들(쉼표로 구분): ")
+upd_quote_raw = input("수정할 명대사(따옴표 없이 입력): ")
 
 upd_actors = upd_actors_input.split(",")
 upd_quote = f"\"{upd_quote_raw}\""
